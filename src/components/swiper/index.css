@@ -1,0 +1,77 @@
+.hw-swiper-container {
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  height: 400px;
+}
+
+.hw-swiper-content-wrapper {
+  position: absolute;
+  width: calc(100% - 30px);
+  margin: 25px 15px;
+  height: 350px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.hw-swiper-content-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.hw-swiper-content {
+  width: 100%;
+  height: 350px;
+  display: inline-block;
+}
+
+.hw-swiper-navigator {
+  position: absolute;
+  bottom: calc(200px - 16.5px);
+  display: inline-block;
+}
+
+.hw-swiper-navigator.prev {
+  left: 12px;
+}
+
+.hw-swiper-navigator.next {
+  right: 12px;
+}
+
+.hw-swiper-navigator > svg {
+  width: 24px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 5px;
+  color: silver;
+  cursor: pointer;
+}
+.hw-swiper-navigator > svg:hover {
+  background-color: silver;
+  color: gray;
+}
+
+.hw-swiper-indicator-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  bottom: 0px;
+  text-align: center;
+}
+.hw-swiper-indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  margin: 0px 3px;
+  background-color: #eeeeee;
+}
+.hw-swiper-indicator.active {
+  background-color: gray;
+}
